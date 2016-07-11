@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+post1:
+  title: MyString
+  body: MyText
+  type: TextPost
+  user: user1
+
+post2:
+  title: MyString
+  body: MyText
+  url: http://images.drestive.com/image.gif
+  type: ImagePost
+  user: user1

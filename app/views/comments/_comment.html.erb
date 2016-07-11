@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <b><%= comment.user.name %></b> said
+    </h4>
+  </div>
+  <div class="panel-body">
+    <%= comment.body %>
+    <% if @can_moderate %>
+        <p>
+          <%= link_to 'Delete', delete_comment_path(comment), method: :delete%>
+        </p>
+    <% end %>
+  </div>
+</div>
